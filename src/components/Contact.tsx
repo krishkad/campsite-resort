@@ -91,7 +91,7 @@ const Contact = () => {
               </h3>
               <p className="text-gray-600 font-light leading-relaxed">
                 Our concierge team is ready to help you create the perfect wilderness getaway. 
-                From accommodation selection to activity planning, we're here every step of the way.
+                From accommodation selection to activity planning, we&apos;re here every step of the way.
               </p>
             </div>
 
