@@ -166,7 +166,7 @@ const Gallery = () => {
           open={!!selectedImage}
           onOpenChange={() => setSelectedImage(null)}
         >
-          <DialogContent className="max-w-5xl p-0 bg-transparent border-none">
+          <DialogContent className="max-w-5xl p-0 bg-transparent border-none" showCloseButton={false}>
             <VisuallyHidden>
               <DialogHeader>
                 <DialogTitle>Edit profile</DialogTitle>
