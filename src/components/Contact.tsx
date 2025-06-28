@@ -58,7 +58,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-24 w-full bg-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-emerald-300 rounded-full filter blur-3xl"></div>
@@ -106,7 +106,7 @@ const Contact = () => {
                       </div>
                       <div className="flex-1">
                         <h4 className="font-medium text-gray-800 mb-1">{info.title}</h4>
-                        <p className="text-gray-900 font-medium mb-1">{info.primary}</p>
+                        <p className="text-gray-900 font-medium text-sm mb-1">{info.primary}</p>
                         <p className="text-sm text-gray-600">{info.secondary}</p>
                       </div>
                     </div>

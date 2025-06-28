@@ -1,19 +1,17 @@
 "use client";
 
-
-
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { ChevronDown } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  
+
   const heroImages = [
-    'https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
+    "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
   ];
 
   useEffect(() => {
@@ -31,7 +29,9 @@ const Hero = () => {
           <div
             key={index}
             className={`absolute inset-0 bg-cover bg-center transition-all duration-2000 ease-in-out ${
-              index === currentImage ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
+              index === currentImage
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-110"
             }`}
             style={{ backgroundImage: `url(${image})` }}
           />
@@ -56,19 +56,19 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 font-light opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Escape to our premium wilderness retreat where sophisticated comfort meets untamed beauty. 
-            Create memories that transcend the ordinary.
+            Escape to our premium wilderness retreat where sophisticated comfort
+            meets untamed beauty. Create memories that transcend the ordinary.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-12 py-4 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-0"
             >
               Book Your Escape
             </Button>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               variant="outline"
               className="border-2 border-white/30 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 px-12 py-4 text-lg font-medium rounded-full transition-all duration-300 transform hover:scale-105"
             >
@@ -93,9 +93,9 @@ const Hero = () => {
             key={index}
             onClick={() => setCurrentImage(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentImage 
-                ? 'bg-white scale-125' 
-                : 'bg-white/40 hover:bg-white/60'
+              index === currentImage
+                ? "bg-white scale-125"
+                : "bg-white/40 hover:bg-white/60"
             }`}
           />
         ))}
