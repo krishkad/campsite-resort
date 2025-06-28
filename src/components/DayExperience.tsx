@@ -119,15 +119,15 @@ const DayExperience = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Image Side */}
-            <div className="relative">
+            <div className="relative rounded-3xl">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src={daySchedule[activeStep].image}
                   alt={daySchedule[activeStep].title}
-                  className="w-full h-full object-cover transition-all duration-700"
+                  className="w-full h-full object-cover transition-all duration-700 overflow-hidden"
                 />
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${daySchedule[activeStep].color} opacity-20`}
+                  className={`absolute inset-0 bg-gradient-to-br rounded-3xl ${daySchedule[activeStep].color} opacity-20`}
                 ></div>
               </div>
 

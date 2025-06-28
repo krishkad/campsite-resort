@@ -49,9 +49,9 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 text-center text-white px-4 max-w-5xl mx-auto">
         <div className="animate-fade-in-up">
-          <h1 className="text-6xl md:text-8xl font-light mb-6 tracking-wide">
+          <h1 className="text-5xl md:text-8xl font-light mb-6 tracking-wide">
             Reconnect with
-            <span className="block font-extralight bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
+            <span className="block font-light bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
               Nature in Luxury
             </span>
           </h1>

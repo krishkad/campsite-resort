@@ -152,7 +152,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="shadow-2xl h-max border-0 bg-white/80 backdrop-blur-sm">
+          <Card className="shadow-2xl h-max border-0 bg-white/80 backdrop-blur-sm p-0">
             <CardContent className="p-8 md:p-10">
               <div className="mb-8">
                 <Badge className="mb-4 bg-teal-100 text-teal-700 hover:bg-teal-200 px-4 py-2 rounded-full">
