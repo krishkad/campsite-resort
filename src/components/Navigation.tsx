@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,11 +18,12 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#hero" },
-    { name: "Camps", href: "#camps" },
-    { name: "Experience", href: "#experience" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#hero" },
+    { name: "Camps", href: "/#camps" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Gallery", href: "/#gallery" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -49,7 +51,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className={`font-light tracking-wide transition-all duration-300 hover:scale-110 ${
@@ -59,7 +61,7 @@ const Navigation = () => {
                 }`}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -116,7 +118,7 @@ const Navigation = () => {
         >
           <div className="pt-6 pb-4 space-y-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -127,7 +129,7 @@ const Navigation = () => {
                 }`}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <Button className="w-full mt-4 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white rounded-full">
               Book Now

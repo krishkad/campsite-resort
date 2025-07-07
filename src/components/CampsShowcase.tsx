@@ -4,10 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star } from "lucide-react";
+import { useRouter } from "next/navigation";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const CampsShowcase = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-
+  const router = useRouter();
   const camps = [
     {
       id: 1,
@@ -16,8 +24,12 @@ const CampsShowcase = () => {
       price: 399,
       rating: 4.9,
       capacity: "2-4 guests",
-      image:
-        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=600&h=400&fit=crop",
+      ],
       amenities: [
         "360° Views",
         "King Bed",
@@ -29,6 +41,7 @@ const CampsShowcase = () => {
       description:
         "Immerse yourself in luxury with panoramic forest views through our geodesic dome's floor-to-ceiling windows.",
       available: true,
+      href: "/#booking",
     },
     {
       id: 2,
@@ -37,8 +50,12 @@ const CampsShowcase = () => {
       price: 299,
       rating: 4.8,
       capacity: "2-6 guests",
-      image:
-        "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1520637836862-4d197d17c0a4?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
+      ],
       amenities: [
         "2 Bedrooms",
         "Full Kitchen",
@@ -50,6 +67,7 @@ const CampsShowcase = () => {
       description:
         "A secluded haven where rustic charm meets contemporary luxury in perfect harmony.",
       available: true,
+      href: "/#booking",
     },
     {
       id: 3,
@@ -58,8 +76,12 @@ const CampsShowcase = () => {
       price: 199,
       rating: 4.7,
       capacity: "2-3 guests",
-      image:
-        "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=600&h=400&fit=crop",
+      ],
       amenities: [
         "River Views",
         "Queen Bed",
@@ -71,6 +93,7 @@ const CampsShowcase = () => {
       description:
         "Wake up to the gentle sounds of flowing water in our elegantly appointed safari-style accommodations.",
       available: false,
+      href: "/#booking",
     },
   ];
 
@@ -109,12 +132,40 @@ const CampsShowcase = () => {
             >
               {/* Image Container */}
               <div className="relative overflow-hidden h-72">
-                <img
-                  src={camp.image}
-                  alt={camp.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <Carousel
+                  className="w-full h-full"
+                  opts={{ align: "start", loop: true }}
+                >
+                  <CarouselContent className="h-full">
+                    {camp.images.map((image, imageIndex) => (
+                      <CarouselItem key={imageIndex} className="h-full">
+                        <div className="relative h-full">
+                          <img
+                            src={image}
+                            alt={`${camp.name} - Image ${imageIndex + 1}`}
+                            className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+
+                  {/* Carousel Navigation */}
+                  <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30  transition-all duration-300 w-8 h-8" />
+                  <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30  transition-all duration-300 w-8 h-8" />
+
+                  {/* Dot Indicators */}
+                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-1  transition-opacity duration-300">
+                    {camp.images.map((_, dotIndex) => (
+                      <div
+                        key={dotIndex}
+                        className="w-2 h-2 rounded-full bg-white/60 backdrop-blur-sm"
+                      />
+                    ))}
+                  </div>
+                </Carousel>
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div> */}
 
                 {/* Price Badge */}
                 <div className="absolute top-4 right-4">
@@ -148,7 +199,7 @@ const CampsShowcase = () => {
                 </div>
               </div>
 
-              <CardContent className="p-8">
+              <CardContent className="p-8 pt-0">
                 <div className="mb-4">
                   <Badge
                     variant="outline"
@@ -189,6 +240,7 @@ const CampsShowcase = () => {
                       : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
                   disabled={!camp.available}
+                  onClick={() => router.push(camp.href)}
                 >
                   {camp.available ? "Reserve Now" : "Currently Unavailable"}
                 </Button>

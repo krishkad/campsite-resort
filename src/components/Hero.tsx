@@ -3,10 +3,11 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
-
+  const router = useRouter();
   const heroImages = [
     "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
     "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
@@ -64,13 +65,15 @@ const Hero = () => {
             <Button
               size="lg"
               className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-12 py-4 text-lg font-medium rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-0"
-            >
+              onClick={() => router.push("/#booking")}
+              >
               Book Your Escape
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-2 border-white/30 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 px-12 py-4 text-lg font-medium rounded-full transition-all duration-300 transform hover:scale-105"
+              onClick={() => router.push("/#camps")}
             >
               Explore Experiences
             </Button>
@@ -87,7 +90,7 @@ const Hero = () => {
       </div>
 
       {/* Image Navigation Dots */}
-      <div className="absolute bottom-8 right-8 flex space-x-3 z-20">
+      {/* <div className="absolute bottom-8 right-8 flex space-x-3 z-20">
         {heroImages.map((_, index) => (
           <button
             key={index}
@@ -99,7 +102,7 @@ const Hero = () => {
             }`}
           />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
