@@ -61,11 +61,11 @@ const BlogList = () => {
 
           <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
             <h1 className="text-5xl md:text-6xl font-light text-white mb-6 animate-fade-in">
-              Pawana Lake Blog
+              Panshet Blog
             </h1>
 
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8 animate-fade-in">
-              Discover the beauty, adventures, and experiences that make Pawana
+              Discover the beauty, adventures, and experiences that make Panshet
               Lake Maharashtra&apos;s premier luxury camping destination.
             </p>
           </div>

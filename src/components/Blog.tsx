@@ -13,7 +13,7 @@ const Blog = () => {
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-light text-gray-800 mb-6 tracking-tight">
-            Discover Pawana Lake
+            Discover Panshet Resort
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
             Explore our latest articles about the beauty, adventures, and unique

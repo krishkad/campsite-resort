@@ -1,4 +1,3 @@
-
 export interface Author {
   name: string;
   bio: string;
@@ -27,391 +26,411 @@ export interface BlogPost {
 }
 
 const defaultAuthor: Author = {
-  name: "Pawana Lake Resort Team",
+  name: "Panshet Resort Team",
   bio: "Passionate travel experts and camping enthusiasts sharing insider tips for the perfect outdoor adventure near Pune and Maharashtra.",
-  avatar: "/placeholder.svg"
+  avatar: "/placeholder.svg",
 };
 
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "Top 7 Hidden Camping Spots Near Pune You Must Explore",
-    slug: "hidden-camping-spots-near-pune",
-    summary: "Discover secret camping destinations around Pune that offer pristine nature, adventure, and unforgettable experiences away from the crowds.",
-    featuredImage: "https://images.unsplash.com/photo-1641226698793-8d3d6628f18a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Top 7 Scenic Camping Spots Near Pune You Shouldn't Miss",
+    slug: "panshet-camping-and-more-near-pune",
+    summary:
+      "Explore the best offbeat camping experiences near Pune—from tranquil lakeside retreats like Panshet to lush green escapes perfect for adventure seekers.",
+    featuredImage:
+      "https://images.unsplash.com/photo-1629320446319-e0f79978906f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Hidden Gems",
-    tags: ["camping near pune", "hidden spots", "weekend getaway", "nature camping", "pune adventure"],
+    tags: [
+      "panshet camping",
+      "camping near pune",
+      "weekend getaway",
+      "lakeside camping",
+      "adventure camping",
+    ],
     publishDate: "2024-01-15",
     readTime: "8 min read",
     author: defaultAuthor,
     tableOfContents: [
-      { id: "introduction", title: "Why Choose Hidden Camping Spots", level: 2 },
-      { id: "pawana-lake", title: "1. Pawana Lake - The Crown Jewel", level: 2 },
+      { id: "introduction", title: "Why Choose Camping Near Pune?", level: 2 },
+      {
+        id: "panshet",
+        title: "1. Panshet Dam - Nature's Peaceful Escape",
+        level: 2,
+      },
       { id: "rajmachi", title: "2. Rajmachi Fort Base", level: 2 },
-      { id: "bhushi-dam", title: "3. Bhushi Dam Surroundings", level: 2 },
-      { id: "tikona-fort", title: "4. Tikona Fort Camping", level: 2 },
+      { id: "bhushi-dam", title: "3. Bhushi Dam Forest Trails", level: 2 },
+      { id: "mulshi", title: "4. Mulshi Lake Retreat", level: 2 },
       { id: "andharban", title: "5. Andharban Forest Trek", level: 2 },
-      { id: "mulshi", title: "6. Mulshi Dam Lakeside", level: 2 },
+      { id: "lonavala", title: "6. Hidden Valleys Near Lonavala", level: 2 },
       { id: "tamhini", title: "7. Tamhini Ghat Valley", level: 2 },
-      { id: "tips", title: "Essential Tips for Hidden Spot Camping", level: 2 }
+      { id: "tips", title: "Tips for a Memorable Camping Trip", level: 2 },
     ],
     seo: {
-      metaTitle: "Top 7 Hidden Camping Spots Near Pune | Secret Locations 2024",
-      metaDescription: "Discover 7 secret camping spots near Pune perfect for weekend getaways. From Pawana Lake to hidden valleys, find your perfect camping adventure in Maharashtra.",
-      focusKeyword: "hidden camping spots near pune",
-      keywords: ["camping near pune", "hidden camping spots", "weekend getaway pune", "secret camping locations", "pune camping guide", "nature camping maharashtra"]
+      metaTitle: "Top 7 Camping Spots Near Pune | Panshet & Hidden Retreats",
+      metaDescription:
+        "Discover 7 top camping locations near Pune including the peaceful Panshet Dam. Perfect for weekend getaways and nature lovers in Maharashtra.",
+      focusKeyword: "panshet camping near pune",
+      keywords: [
+        "panshet dam camping",
+        "camping near pune",
+        "weekend getaways pune",
+        "lakeside camping spots",
+        "hidden camping retreats",
+      ],
     },
     content: `
-      <div class="blog-content">
-        <h2 id="introduction">Why Choose Hidden Camping Spots Near Pune?</h2>
-        
-        <div class="callout callout-info">
-          <div class="callout-icon">💡</div>
-          <div class="callout-content">
-            <strong>Pro Tip:</strong> Hidden camping spots offer pristine nature, fewer crowds, and authentic outdoor experiences just 2-3 hours from Pune.
-          </div>
+    <div class="blog-content">
+      <h2 id="introduction">Why Choose Camping Near Pune?</h2>
+      <div class="callout callout-info">
+        <div class="callout-icon">💡</div>
+        <div class="callout-content">
+          <strong>Quick Tip:</strong> Pune's proximity to the Sahyadris and multiple dam reservoirs makes it a prime spot for unique camping adventures within a 2–3 hour drive.
         </div>
-
-        <p>Pune's proximity to the Western Ghats makes it a gateway to some of India's most spectacular hidden camping destinations. While popular spots get crowded, these secret locations offer solitude, stunning landscapes, and unforgettable memories.</p>
-
-        <h2 id="pawana-lake">1. Pawana Lake - The Crown Jewel of Camping Near Pune</h2>
-        
-        <p><strong>Distance from Pune:</strong> 110 km (2.5 hours drive)<br>
-        <strong>Best Time:</strong> October to March<br>
-        <strong>Camping Style:</strong> Lakeside luxury camping</p>
-
-        <p>Nestled between Lonavala and Khandala, Pawana Lake offers the perfect blend of adventure and comfort. This artificial reservoir, created by the Pawana Dam, transforms into a camping paradise during the cooler months.</p>
-
-        <div class="callout callout-success">
-          <div class="callout-icon">🌟</div>
-          <div class="callout-content">
-            <strong>Why It's Special:</strong> Crystal clear waters, surrounding hills, and luxury tent accommodations make this the ultimate romantic camping destination near Pune.
-          </div>
-        </div>
-
-        <p><strong>Activities Available:</strong></p>
-        <ul>
-          <li>Lakeside camping with bonfire nights</li>
-          <li>Kayaking and boating adventures</li>
-          <li>Trekking to nearby Tikona and Tung forts</li>
-          <li>Photography and stargazing sessions</li>
-          <li>BBQ and outdoor dining experiences</li>
-        </ul>
-
-        <h2 id="rajmachi">2. Rajmachi Fort Base - Historical Camping Adventure</h2>
-        
-        <p><strong>Distance from Pune:</strong> 85 km<br>
-        <strong>Difficulty:</strong> Moderate<br>
-        <strong>Best For:</strong> History enthusiasts and trekkers</p>
-
-        <p>Camp at the base of the historic Rajmachi Fort, where Shivaji Maharaj once strategized his campaigns. This hidden spot combines historical significance with natural beauty.</p>
-
-        <p><strong>What Makes It Unique:</strong></p>
-        <ul>
-          <li>Ancient fort ruins to explore</li>
-          <li>Panoramic valley views</li>
-          <li>Monsoon waterfalls nearby</li>
-          <li>Rich Maratha history</li>
-        </ul>
-
-        <h2 id="bhushi-dam">3. Bhushi Dam Surroundings - Monsoon Magic</h2>
-        
-        <p>While Bhushi Dam itself gets crowded, the surrounding areas offer secluded camping spots with the sound of cascading water as your lullaby.</p>
-
-        <div class="callout callout-warning">
-          <div class="callout-icon">⚠️</div>
-          <div class="callout-content">
-            <strong>Safety Note:</strong> Best visited during post-monsoon months (September-November) when water levels are optimal but not dangerous.
-          </div>
-        </div>
-
-        <h2 id="tikona-fort">4. Tikona Fort Camping - Triangle of Adventure</h2>
-        
-        <p>Named for its triangular shape, Tikona Fort offers one of the most unique camping experiences near Pune, with 360-degree views of the Sahyadri ranges.</p>
-
-        <p><strong>Camping Highlights:</strong></p>
-        <ul>
-          <li>Sunrise views over Pawana Lake</li>
-          <li>Ancient caves and water cisterns</li>
-          <li>Moderate trek to the summit</li>
-          <li>Perfect for solo and group camping</li>
-        </ul>
-
-        <h2 id="andharban">5. Andharban Forest Trek - The Dark Forest Experience</h2>
-        
-        <p>Translating to "Dark Forest," Andharban offers a mystical camping experience through dense jungle trails and hidden valleys.</p>
-
-        <p><strong>Adventure Elements:</strong></p>
-        <ul>
-          <li>Dense forest camping</li>
-          <li>Multiple waterfall encounters</li>
-          <li>Rich biodiversity</li>
-          <li>Photography paradise</li>
-        </ul>
-
-        <h2 id="mulshi">6. Mulshi Dam Lakeside - Serene Waters</h2>
-        
-        <p>Mulshi Dam creates a massive lake surrounded by rolling hills, offering peaceful camping with stunning sunset views.</p>
-
-        <div class="callout callout-info">
-          <div class="callout-icon">📸</div>
-          <div class="callout-content">
-            <strong>Instagram Worthy:</strong> Mulshi offers some of the most photogenic landscapes in Maharashtra, especially during golden hour.
-          </div>
-        </div>
-
-        <h2 id="tamhini">7. Tamhini Ghat Valley - Monsoon Wonderland</h2>
-        
-        <p>During monsoons, Tamhini transforms into a waterfall wonderland, while post-monsoon offers excellent camping opportunities in the lush valley.</p>
-
-        <h2 id="tips">Essential Tips for Hidden Spot Camping Near Pune</h2>
-
-        <div class="callout callout-success">
-          <div class="callout-icon">✅</div>
-          <div class="callout-content">
-            <strong>Preparation Checklist:</strong>
-            <ul style="margin: 0.5rem 0;">
-              <li>Book camping spots in advance</li>
-              <li>Check weather conditions</li>
-              <li>Carry adequate water and food</li>
-              <li>Inform someone about your location</li>
-              <li>Pack eco-friendly supplies</li>
-            </ul>
-          </div>
-        </div>
-
-        <p><strong>Best Time to Visit:</strong> October to March for most locations, with each season offering unique experiences.</p>
-
-        <p><strong>What to Pack:</strong></p>
-        <ul>
-          <li>Weatherproof camping gear</li>
-          <li>First aid kit</li>
-          <li>Portable chargers and power banks</li>
-          <li>Local maps and GPS devices</li>
-          <li>Eco-friendly toiletries</li>
-        </ul>
-
-        <p>These hidden camping spots near Pune offer the perfect escape from city life, combining adventure, nature, and tranquility. Whether you're seeking romantic getaways, family adventures, or solo exploration, these destinations provide unforgettable experiences in Maharashtra's stunning landscapes.</p>
       </div>
-    `
+
+      <p>If you're looking for fresh air, starry skies, and peaceful waterside views—camping near Pune offers all that and more. Skip the touristy spots and experience nature up close in these lesser-known but breathtaking destinations.</p>
+
+      <h2 id="panshet">1. Panshet Dam - Nature's Peaceful Escape</h2>
+      
+      <p><strong>Distance from Pune:</strong> 50 km (1.5 hours drive)<br>
+      <strong>Best Time:</strong> October to February<br>
+      <strong>Camping Style:</strong> Lakeside tents, kayaking, and stargazing</p>
+
+      <p>One of Pune’s best-kept secrets, Panshet offers serene lakeside camping surrounded by hills, water, and silence. With calm waters ideal for kayaking and open skies for stargazing, it's a perfect weekend retreat for families, couples, or solo travelers.</p>
+
+      <div class="callout callout-success">
+        <div class="callout-icon">🌟</div>
+        <div class="callout-content">
+          <strong>Why It Stands Out:</strong> Unlike crowded campsites, Panshet offers raw, unfiltered nature with activities like kayaking, swimming, and peaceful bonfire evenings under the stars.
+        </div>
+      </div>
+
+      <p><strong>Top Activities:</strong></p>
+      <ul>
+        <li>Sunset kayaking and boating</li>
+        <li>Lakeside camping and BBQ</li>
+        <li>Bonfire under the stars</li>
+        <li>Early morning nature trails</li>
+        <li>Perfect for photographers and couples</li>
+      </ul>
+
+      <h2 id="rajmachi">2. Rajmachi Fort Base - Historical Hillside Camping</h2>
+      <p>A favorite among trekking enthusiasts, this historical fort base is perfect for campers who love history and rugged trails.</p>
+
+      <h2 id="bhushi-dam">3. Bhushi Dam Forest Trails</h2>
+      <p>Escape the crowded dam area and head into the quiet forest trails nearby for a peaceful and nature-filled camping experience.</p>
+
+      <h2 id="mulshi">4. Mulshi Lake Retreat</h2>
+      <p>Ideal for romantic getaways and landscape photography, Mulshi is a photogenic haven with calm waters and soft hill backdrops.</p>
+
+      <h2 id="andharban">5. Andharban Forest Trek</h2>
+      <p>Pitch a tent amidst dense jungle, walk through misty trails, and enjoy the waterfall views for a surreal jungle camping experience.</p>
+
+      <h2 id="lonavala">6. Hidden Valleys Near Lonavala</h2>
+      <p>Beyond the tourist attractions, discover off-grid valleys around Lonavala that are ideal for wild camping and solitude.</p>
+
+      <h2 id="tamhini">7. Tamhini Ghat Valley</h2>
+      <p>Best enjoyed during or just after monsoon, the Tamhini valley turns into a carpet of green, dotted with waterfalls and natural pools.</p>
+
+      <h2 id="tips">Tips for a Memorable Camping Trip</h2>
+      <div class="callout callout-success">
+        <div class="callout-icon">✅</div>
+        <div class="callout-content">
+          <strong>Checklist:</strong>
+          <ul style="margin: 0.5rem 0;">
+            <li>Choose eco-friendly campsites</li>
+            <li>Pack rainproof gear and extra clothes</li>
+            <li>Carry mosquito repellent and sunscreen</li>
+            <li>Book in advance during peak seasons</li>
+            <li>Respect nature—leave no trace behind</li>
+          </ul>
+        </div>
+      </div>
+
+      <p><strong>Final Thought:</strong> Whether you crave adventure or just need a break from the city noise, places like Panshet Dam and its hidden companions offer the perfect escape. Experience Maharashtra's wilderness like never before!</p>
+    </div>
+  `,
   },
+
   {
     id: "2",
-    title: "Weekend Camping Trips From Pune: Your Ultimate Guide",
-    slug: "weekend-camping-trips-pune-guide",
-    summary: "Plan the perfect weekend camping trip from Pune with our comprehensive guide covering destinations, itineraries, packing lists, and insider tips.",
-    featuredImage: "https://images.unsplash.com/flagged/photo-1558954157-7104f14c2ecc?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Panshet Camping: Your Ultimate Weekend Getaway Guide",
+    slug: "panshet-camping-guide",
+    summary:
+      "Discover the serene beauty of Panshet with our comprehensive guide to camping near Pune. Learn about the best campsites, activities, packing tips, and more for an unforgettable weekend adventure.",
+    featuredImage:
+      "https://images.unsplash.com/photo-1653240628827-49bd8fc4a5b7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Travel Guide",
-    tags: ["weekend getaway pune", "camping trips", "pune weekend", "travel guide", "weekend camping"],
-    publishDate: "2024-01-20",
+    tags: [
+      "panshet camping",
+      "weekend getaway pune",
+      "camping near pune",
+      "pune camping",
+      "outdoor adventure",
+    ],
+    publishDate: "2025-07-08",
     readTime: "10 min read",
     author: defaultAuthor,
     tableOfContents: [
-      { id: "planning", title: "Planning Your Weekend Camping Trip", level: 2 },
-      { id: "destinations", title: "Top Weekend Camping Destinations", level: 2 },
+      { id: "planning", title: "Planning Your Panshet Camping Trip", level: 2 },
+      { id: "why-panshet", title: "Why Choose Panshet for Camping", level: 2 },
+      { id: "activities", title: "Top Activities in Panshet", level: 2 },
       { id: "itinerary", title: "Sample Weekend Itineraries", level: 2 },
       { id: "packing", title: "Essential Packing Checklist", level: 2 },
       { id: "budget", title: "Budget Planning Guide", level: 2 },
-      { id: "safety", title: "Safety Guidelines", level: 2 }
+      { id: "safety", title: "Safety Guidelines", level: 2 },
     ],
     seo: {
-      metaTitle: "Weekend Camping Trips From Pune | Complete Guide 2024",
-      metaDescription: "Plan perfect weekend camping trips from Pune. Complete guide with destinations, itineraries, packing lists & tips for memorable getaways in Maharashtra.",
-      focusKeyword: "weekend camping trips pune",
-      keywords: ["weekend getaway pune", "camping near pune", "weekend camping", "pune travel guide", "maharashtra camping", "weekend trips from pune"]
+      metaTitle: "Panshet Camping Guide | Weekend Getaway from Pune 2025",
+      metaDescription:
+        "Plan the perfect camping trip to Panshet near Pune. Complete guide with activities, itineraries, packing lists, and tips for a memorable outdoor adventure.",
+      focusKeyword: "panshet camping",
+      keywords: [
+        "panshet camping",
+        "camping near pune",
+        "weekend getaway pune",
+        "pune outdoor adventure",
+        "maharashtra camping",
+      ],
     },
     content: `
-      <div class="blog-content">
-        <h2 id="planning">Planning Your Perfect Weekend Camping Trip From Pune</h2>
-        
-        <p>Pune's strategic location in Maharashtra makes it the perfect base for weekend camping adventures. With the Western Ghats on one side and the Deccan Plateau on the other, you have access to diverse landscapes within a 3-hour drive.</p>
+    <div class="blog-content">
+      <h2 id="planning">Planning Your Panshet Camping Trip</h2>
+      
+      <p>Panshet, just 50 km from Pune, is an ideal weekend camping destination due to its proximity and stunning natural beauty. Nestled near the Panshet Dam and surrounded by the Sahyadri mountains, it offers a quick escape from city life.</p>
 
-        <div class="callout callout-info">
-          <div class="callout-icon">🗓️</div>
-          <div class="callout-content">
-            <strong>Planning Timeline:</strong> Start planning your weekend camping trip at least 2 weeks in advance for best availability and rates.
-          </div>
-        </div>
-
-        <h2 id="destinations">Top Weekend Camping Destinations From Pune</h2>
-
-        <h3>1. Pawana Lake (110 km - 2.5 hours)</h3>
-        <p><strong>Perfect For:</strong> Couples, families, luxury camping<br>
-        <strong>Activities:</strong> Boating, trekking, stargazing, bonfire</p>
-
-        <h3>2. Bhandardara (185 km - 4 hours)</h3>
-        <p><strong>Perfect For:</strong> Nature lovers, photographers<br>
-        <strong>Activities:</strong> Arthur Lake boating, Wilson Dam visit, Randha Falls</p>
-
-        <h3>3. Igatpuri (125 km - 3 hours)</h3>
-        <p><strong>Perfect For:</strong> Adventure seekers<br>
-        <strong>Activities:</strong> Kalsubai peak trek, Bhatsa River valley camping</p>
-
-        <h3>4. Wai (95 km - 2 hours)</h3>
-        <p><strong>Perfect For:</strong> Cultural enthusiasts<br>
-        <strong>Activities:</strong> Krishna River camping, temple visits, strawberry farms</p>
-
-        <h2 id="itinerary">Sample Weekend Itineraries</h2>
-
-        <h3>Friday Evening Departure (2.5 Days)</h3>
-        
-        <div class="callout callout-success">
-          <div class="callout-icon">🚗</div>
-          <div class="callout-content">
-            <strong>Friday 6:00 PM:</strong> Depart from Pune<br>
-            <strong>Friday 8:30 PM:</strong> Reach campsite, setup, dinner<br>
-            <strong>Saturday:</strong> Full day activities, adventure sports<br>
-            <strong>Sunday:</strong> Morning activities, pack up, return
-          </div>
-        </div>
-
-        <h3>Saturday Morning Departure (2 Days)</h3>
-        
-        <p><strong>Saturday 6:00 AM:</strong> Early departure from Pune<br>
-        <strong>Saturday 9:00 AM:</strong> Breakfast en route<br>
-        <strong>Saturday 10:30 AM:</strong> Reach destination, setup camp<br>
-        <strong>Saturday Afternoon:</strong> Activities and exploration<br>
-        <strong>Sunday Morning:</strong> Sunrise, breakfast, pack up, return</p>
-
-        <h2 id="packing">Essential Packing Checklist for Weekend Camping</h2>
-
-        <h3>Camping Gear</h3>
-        <ul>
-          <li>✅ Tent (if not provided by operator)</li>
-          <li>✅ Sleeping bags and pillows</li>
-          <li>✅ Camping chairs and table</li>
-          <li>✅ Lanterns and flashlights</li>
-          <li>✅ Portable phone chargers</li>
-        </ul>
-
-        <h3>Clothing Essentials</h3>
-        <ul>
-          <li>✅ Comfortable trekking shoes</li>
-          <li>✅ Quick-dry clothing</li>
-          <li>✅ Warm jacket for night</li>
-          <li>✅ Rain gear (monsoon season)</li>
-          <li>✅ Extra pair of clothes</li>
-        </ul>
-
-        <div class="callout callout-warning">
-          <div class="callout-icon">🎒</div>
-          <div class="callout-content">
-            <strong>Packing Tip:</strong> Keep your backpack weight under 15kg for comfortable weekend trips. Pack only essentials and choose multi-purpose items.
-          </div>
-        </div>
-
-        <h3>Food and Water</h3>
-        <ul>
-          <li>✅ Sufficient drinking water (3-4 liters per person)</li>
-          <li>✅ Energy bars and dry fruits</li>
-          <li>✅ Instant noodles and ready-to-eat meals</li>
-          <li>✅ Tea/coffee packets</li>
-          <li>✅ Fruits and healthy snacks</li>
-        </ul>
-
-        <h2 id="budget">Budget Planning Guide for Weekend Camping</h2>
-
-        <h3>Budget Categories (Per Person)</h3>
-
-        <p><strong>Budget Camping (₹1,500 - ₹2,500)</strong></p>
-        <ul>
-          <li>Basic tent accommodation</li>
-          <li>Shared facilities</li>
-          <li>Self-cooked meals</li>
-          <li>Public transport</li>
-        </ul>
-
-        <p><strong>Mid-Range Camping (₹2,500 - ₹4,500)</strong></p>
-        <ul>
-          <li>Comfortable tent with amenities</li>
-          <li>Organized meals included</li>
-          <li>Some activities included</li>
-          <li>Private vehicle</li>
-        </ul>
-
-        <p><strong>Luxury Camping (₹4,500 - ₹8,000)</strong></p>
-        <ul>
-          <li>Premium accommodation</li>
-          <li>All meals and activities</li>
-          <li>Professional guides</li>
-          <li>Additional services</li>
-        </ul>
-
-        <div class="callout callout-info">
-          <div class="callout-icon">💰</div>
-          <div class="callout-content">
-            <strong>Money-Saving Tips:</strong>
-            <ul style="margin: 0.5rem 0;">
-              <li>Book group packages for better rates</li>
-              <li>Travel during off-peak seasons</li>
-              <li>Share transportation costs</li>
-              <li>Pack your own food and snacks</li>
-            </ul>
-          </div>
-        </div>
-
-        <h2 id="safety">Safety Guidelines for Weekend Camping</h2>
-
-        <h3>Before Departure</h3>
-        <ul>
-          <li>🔍 Research weather conditions</li>
-          <li>📱 Share itinerary with family/friends</li>
-          <li>🏥 Check nearest medical facilities</li>
-          <li>📋 Verify camping operator credentials</li>
-        </ul>
-
-        <h3>During the Trip</h3>
-        <ul>
-          <li>🚰 Drink only purified water</li>
-          <li>🔥 Follow fire safety guidelines</li>
-          <li>🌿 Respect local environment</li>
-          <li>📞 Maintain emergency contacts</li>
-        </ul>
-
-        <h3>Emergency Preparedness</h3>
-        <ul>
-          <li>First aid kit with basic medicines</li>
-          <li>Emergency contact numbers</li>
-          <li>Local emergency services information</li>
-          <li>Backup communication devices</li>
-        </ul>
-
-        <p>Weekend camping trips from Pune offer the perfect opportunity to disconnect from city life and reconnect with nature. With proper planning, the right gear, and a spirit of adventure, your weekend getaway will create memories that last a lifetime.</p>
-
-        <div class="callout callout-success">
-          <div class="callout-icon">🌟</div>
-          <div class="callout-content">
-            <strong>Ready to Start?</strong> Book your weekend camping adventure today and experience the best that Maharashtra's outdoors has to offer!
-          </div>
+      <div class="callout callout-info">
+        <div class="callout-icon">🗓️</div>
+        <div class="callout-content">
+          <strong>Planning Timeline:</strong> Book your campsite 2-3 weeks in advance to secure the best spots and deals, especially during peak seasons.
         </div>
       </div>
-    `
+
+      <h2 id="why-panshet">Why Choose Panshet for Camping</h2>
+
+      <p><strong>Perfect For:</strong> Families, friends, solo travelers<br>
+      <strong>Highlights:</strong> Panshet Dam, scenic views, water sports, tranquil environment<br>
+      <strong>Distance:</strong> 50 km from Pune (1-1.5 hours by road)</p>
+
+      <p>Panshet offers a mix of adventure and relaxation with its lush greenery, calm waters, and starry nights, making it perfect for campers of all kinds.</p>
+
+      <h2 id="activities">Top Activities in Panshet</h2>
+
+      <h3>1. Water Sports at Panshet Dam</h3>
+      <p><strong>Perfect For:</strong> Adventure enthusiasts<br>
+      <strong>Activities:</strong> Kayaking, jet-skiing, speed boating</p>
+
+      <h3>2. Trekking in Sahyadri Hills</h3>
+      <p><strong>Perfect For:</strong> Nature lovers, fitness buffs<br>
+      <strong>Activities:</strong> Trek to Sinhagad Fort or nearby hills, bird watching</p>
+
+      <h3>3. Stargazing and Bonfire</h3>
+      <p><strong>Perfect For:</strong> Couples, groups<br>
+      <strong>Activities:</strong> Nighttime stargazing, bonfire with barbecue</p>
+
+      <h3>4. Nature Walks</h3>
+      <p><strong>Perfect For:</strong> Families, photographers<br>
+      <strong>Activities:</strong> Explore local flora and fauna, visit nearby villages</p>
+
+      <h2 id="itinerary">Sample Weekend Itineraries</h2>
+
+      <h3>Friday Evening Departure (2.5 Days)</h3>
+      
+      <div class="callout callout-success">
+        <div class="callout-icon">🚗</div>
+        <div class="callout-content">
+          <strong>Friday 6:00 PM:</strong> Depart from Pune<br>
+          <strong>Friday 7:30 PM:</strong> Arrive at Panshet, set up camp, dinner<br>
+          <strong>Saturday:</strong> Water sports, trekking, bonfire<br>
+          <strong>Sunday:</strong> Morning nature walk, pack up, return
+        </div>
+      </div>
+
+      <h3>Saturday Morning Departure (2 Days)</h3>
+      
+      <p><strong>Saturday 6:00 AM:</strong> Early departure from Pune<br>
+      <strong>Saturday 7:30 AM:</strong> Breakfast en route<br>
+      <strong>Saturday 8:30 AM:</strong> Reach Panshet, set up camp<br>
+      <strong>Saturday Afternoon:</strong> Water sports and exploration<br>
+      <strong>Sunday Morning:</strong> Sunrise walk, breakfast, return</p>
+
+      <h2 id="packing">Essential Packing Checklist for Panshet Camping</h2>
+
+      <h3>Camping Gear</h3>
+      <ul>
+        <li>✅ Tent (if not provided by campsite)</li>
+        <li>✅ Sleeping bags and mats</li>
+        <li>✅ Portable chairs and table</li>
+        <li>✅ Flashlights and headlamps</li>
+        <li>✅ Power bank for devices</li>
+      </ul>
+
+      <h3>Clothing Essentials</h3>
+      <ul>
+        <li>✅ Trekking shoes or sandals</li>
+        <li>✅ Quick-dry clothes for water activities</li>
+        <li>✅ Warm jacket for chilly nights</li>
+        <li>✅ Raincoat or poncho (monsoon season)</li>
+        <li>✅ Extra set of clothes</li>
+      </ul>
+
+      <div class="callout callout-warning">
+        <div class="callout-icon">🎒</div>
+        <div class="callout-content">
+          <strong>Packing Tip:</strong> Keep your backpack under 12kg for easy mobility. Opt for lightweight, multi-use gear to save space.
+        </div>
+      </div>
+
+      <h3>Food and Water</h3>
+      <ul>
+        <li>✅ Drinking water (3-4 liters per person)</li>
+        <li>✅ Energy bars and nuts</li>
+        <li>✅ Ready-to-eat meals or instant noodles</li>
+        <li>✅ Coffee/tea packets</li>
+        <li>✅ Fresh fruits and snacks</li>
+      </ul>
+
+      <h2 id="budget">Budget Planning Guide for Panshet Camping</h2>
+
+      <h3>Budget Categories (Per Person)</h3>
+
+      <p><strong>Budget Camping (₹1,200 - ₹2,000)</strong></p>
+      <ul>
+        <li>Basic tent setup</li>
+        <li>Shared amenities</li>
+        <li>Self-prepared meals</li>
+        <li>Public or shared transport</li>
+      </ul>
+
+      <p><strong>Mid-Range Camping (₹2,000 - ₹4,000)</strong></p>
+      <ul>
+        <li>Comfortable tents with bedding</li>
+        <li>Meals included</li>
+        <li>Basic activities included</li>
+        <li>Private vehicle</li>
+      </ul>
+
+      <p><strong>Luxury Camping (₹4,000 - ₹7,000)</strong></p>
+      <ul>
+        <li>Premium tents with facilities</li>
+        <li>All meals and water sports</li>
+        <li>Guided activities</li>
+        <li>Additional services</li>
+      </ul>
+
+      <div class="callout callout-info">
+        <div class="callout-icon">💰</div>
+        <div class="callout-content">
+          <strong>Money-Saving Tips:</strong>
+          <ul style="margin: 0.5rem 0;">
+            <li>Opt for group bookings for discounts</li>
+            <li>Visit during weekdays for lower rates</li>
+            <li>Share fuel costs with friends</li>
+            <li>Bring your own snacks and meals</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="safety">Safety Guidelines for Panshet Camping</h2>
+
+      <h3>Before Departure</h3>
+      <ul>
+        <li>🔍 Check weather forecasts</li>
+        <li>📱 Share itinerary with loved ones</li>
+        <li>🏥 Locate nearest hospital or clinic</li>
+        <li>📋 Confirm campsite operator credentials</li>
+      </ul>
+
+      <h3>During the Trip</h3>
+      <ul>
+        <li>🚰 Use purified water only</li>
+        <li>🔥 Adhere to bonfire safety rules</li>
+        <li>🌿 Avoid littering to protect nature</li>
+        <li>📞 Keep emergency contacts handy</li>
+      </ul>
+
+      <h3>Emergency Preparedness</h3>
+      <ul>
+        <li>First aid kit with essentials</li>
+        <li>Emergency contact list</li>
+        <li>Local emergency service numbers</li>
+        <li>Backup charger or walkie-talkie</li>
+      </ul>
+
+      <p>Panshet camping offers a refreshing escape into nature with adventure and relaxation just a short drive from Pune. With careful planning and the right gear, your weekend in Panshet will be a memorable getaway.</p>
+
+      <div class="callout callout-success">
+        <div class="callout-icon">🌟</div>
+        <div class="callout-content">
+          <strong>Ready to Camp?</strong> Book your Panshet camping adventure now and immerse yourself in Maharashtra's natural beauty!
+        </div>
+      </div>
+    </div>
+  `,
   },
   {
     id: "3",
     title: "How to Plan a Perfect Camping Trip Near Pune (Checklist & Tips)",
     slug: "perfect-camping-trip-pune-checklist",
-    summary: "Master the art of camping trip planning with our detailed checklist, expert tips, and step-by-step guide for unforgettable outdoor adventures near Pune.",
-    featuredImage: "https://images.unsplash.com/photo-1473625247510-8ceb1760943f?q=80&w=811&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    summary:
+      "Master the art of camping trip planning with our detailed checklist, expert tips, and step-by-step guide for unforgettable outdoor adventures near Pune.",
+    featuredImage:
+      "https://images.unsplash.com/photo-1473625247510-8ceb1760943f?q=80&w=811&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Planning Guide",
-    tags: ["camping planning", "pune camping guide", "camping checklist", "camping tips", "outdoor adventure"],
+    tags: [
+      "camping planning",
+      "pune camping guide",
+      "camping checklist",
+      "camping tips",
+      "outdoor adventure",
+    ],
     publishDate: "2024-01-25",
     readTime: "12 min read",
     author: defaultAuthor,
     tableOfContents: [
-      { id: "pre-planning", title: "Pre-Planning Phase (2-4 Weeks Before)", level: 2 },
-      { id: "choosing-destination", title: "Choosing the Right Destination", level: 2 },
-      { id: "booking-accommodation", title: "Booking and Accommodation", level: 2 },
-      { id: "packing-essentials", title: "Comprehensive Packing Guide", level: 2 },
+      {
+        id: "pre-planning",
+        title: "Pre-Planning Phase (2-4 Weeks Before)",
+        level: 2,
+      },
+      {
+        id: "choosing-destination",
+        title: "Choosing the Right Destination",
+        level: 2,
+      },
+      {
+        id: "booking-accommodation",
+        title: "Booking and Accommodation",
+        level: 2,
+      },
+      {
+        id: "packing-essentials",
+        title: "Comprehensive Packing Guide",
+        level: 2,
+      },
       { id: "food-planning", title: "Food and Meal Planning", level: 2 },
-      { id: "safety-preparation", title: "Safety and Emergency Preparation", level: 2 },
-      { id: "final-checklist", title: "Final 24-Hour Checklist", level: 2 }
+      {
+        id: "safety-preparation",
+        title: "Safety and Emergency Preparation",
+        level: 2,
+      },
+      { id: "final-checklist", title: "Final 24-Hour Checklist", level: 2 },
     ],
     seo: {
-      metaTitle: "How to Plan Perfect Camping Trip Near Pune | Complete Guide 2024",
-      metaDescription: "Complete camping trip planning guide for Pune. Detailed checklist, expert tips, destination selection & packing guide for perfect outdoor adventures.",
+      metaTitle:
+        "How to Plan Perfect Camping Trip Near Pune | Complete Guide 2024",
+      metaDescription:
+        "Complete camping trip planning guide for Pune. Detailed checklist, expert tips, destination selection & packing guide for perfect outdoor adventures.",
       focusKeyword: "camping trip planning pune",
-      keywords: ["camping near pune", "camping checklist", "camping planning guide", "pune outdoor activities", "camping tips", "maharashtra camping"]
+      keywords: [
+        "camping near pune",
+        "camping checklist",
+        "camping planning guide",
+        "pune outdoor activities",
+        "camping tips",
+        "maharashtra camping",
+      ],
     },
     content: `
       <div class="blog-content">
@@ -657,276 +676,307 @@ export const blogPosts: BlogPost[] = [
 
         <p>With this comprehensive planning guide, you're ready to create unforgettable camping memories near Pune. Remember, the journey of a thousand miles begins with a single step – and proper planning makes every step count!</p>
       </div>
-    `
+    `,
   },
   {
     id: "4",
-    title: "Romantic Camping Getaways Near Pune for Couples",
-    slug: "romantic-camping-getaways-pune-couples",
-    summary: "Discover the most romantic camping destinations near Pune perfect for couples seeking intimate outdoor experiences, luxury amenities, and unforgettable moments together.",
-    featuredImage: "https://images.unsplash.com/photo-1496433998859-da21e208bd42?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Romance",
-    tags: ["romantic camping", "couples getaway", "romantic pune", "luxury camping", "couple activities"],
-    publishDate: "2024-02-01",
-    readTime: "9 min read",
+    title:
+      "Panshet Camping & Glamping Resort Guide: Your Ultimate Outdoor Escape",
+    slug: "panshet-camping-glamping-resort-guide",
+    summary:
+      "Explore the best camping and glamping resorts in Panshet near Pune with this ultimate guide. Discover top resorts, activities, booking tips, and SEO-optimized advice for a memorable getaway.",
+    featuredImage:
+      "https://images.unsplash.com/photo-1525811902-f2342640856e?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0",
+    category: "Travel Guide",
+    tags: [
+      "panshet camping",
+      "panshet glamping",
+      "camping near pune",
+      "panshet resorts",
+      "outdoor getaway",
+    ],
+    publishDate: "2025-07-08",
+    readTime: "10 min read",
     author: defaultAuthor,
     tableOfContents: [
-      { id: "romantic-spots", title: "Top Romantic Camping Destinations", level: 2 },
-      { id: "luxury-options", title: "Luxury Camping Experiences", level: 2 },
-      { id: "activities", title: "Romantic Activities for Couples", level: 2 },
-      { id: "planning-tips", title: "Planning the Perfect Romantic Trip", level: 2 },
-      { id: "special-occasions", title: "Special Occasion Camping", level: 2 }
+      {
+        id: "introduction",
+        title: "Why Panshet for Camping & Glamping",
+        level: 2,
+      },
+      {
+        id: "top-resorts",
+        title: "Top Camping & Glamping Resorts in Panshet",
+        level: 2,
+      },
+      { id: "activities", title: "Must-Do Activities in Panshet", level: 2 },
+      { id: "booking-tips", title: "Booking Your Panshet Resort", level: 2 },
+      {
+        id: "packing-guide",
+        title: "Packing for Panshet Camping & Glamping",
+        level: 2,
+      },
+      { id: "budget-planning", title: "Budget and Cost Breakdown", level: 2 },
+      {
+        id: "safety-tips",
+        title: "Safety Tips for a Worry-Free Trip",
+        level: 2,
+      },
     ],
     seo: {
-      metaTitle: "Romantic Camping Near Pune for Couples | Luxury Getaways 2024",
-      metaDescription: "Discover romantic camping destinations near Pune perfect for couples. Luxury tents, private experiences & unforgettable moments in Maharashtra's scenic locations.",
-      focusKeyword: "romantic camping near pune",
-      keywords: ["romantic camping near pune", "couples getaway pune", "luxury camping maharashtra", "romantic weekend pune", "couples camping", "honeymoon camping"]
+      metaTitle: "Panshet Camping & Glamping Resorts | Ultimate Guide 2025",
+      metaDescription:
+        "Discover the best camping and glamping resorts in Panshet near Pune. Find top resorts, activities, booking tips, and more for an unforgettable outdoor escape.",
+      focusKeyword: "panshet camping glamping resorts",
+      keywords: [
+        "panshet camping",
+        "panshet glamping resorts",
+        "camping near pune",
+        "panshet dam resorts",
+        "pune weekend getaway",
+        "maharashtra glamping",
+      ],
     },
     content: `
-      <div class="blog-content">
-        <p>Escape the hustle and bustle of city life with your special someone and discover the most romantic camping destinations near Pune. From luxury lakeside tents to intimate mountain retreats, these carefully curated locations offer the perfect setting for couples to reconnect with nature and each other.</p>
+    <div class="blog-content">
+      <p>Panshet, located just 50 km from Pune, is a haven for camping and glamping enthusiasts. With its stunning lakeside views, lush Sahyadri hills, and proximity to Panshet Dam, it’s the perfect spot for a rejuvenating weekend escape. This SEO-optimized guide highlights the best camping and glamping resorts in Panshet, activities, and essential tips to plan your trip.</p>
 
-        <div class="callout callout-info">
-          <div class="callout-icon">💕</div>
-          <div class="callout-content">
-            <strong>Romance Factor:</strong> These destinations offer privacy, stunning views, luxury amenities, and activities designed specifically for couples seeking intimate outdoor experiences.
-          </div>
-        </div>
+      <h2 id="introduction">Why Panshet for Camping & Glamping</h2>
+      
+      <p>Panshet offers a unique blend of adventure, luxury, and nature, making it ideal for both traditional camping and upscale glamping. Whether you’re seeking a rustic tent experience or a luxurious glamping resort with modern amenities, Panshet has it all, just a 1-1.5-hour drive from Pune.</p>
 
-        <h2 id="romantic-spots">Top Romantic Camping Destinations Near Pune</h2>
-
-        <h3>1. Pawana Lake - The Ultimate Romantic Paradise</h3>
-        
-        <p><strong>Distance:</strong> 110 km from Pune<br>
-        <strong>Romance Rating:</strong> ⭐⭐⭐⭐⭐<br>
-        <strong>Best For:</strong> Luxury camping, lakeside dinners, stargazing</p>
-
-        <p>Pawana Lake stands as the crown jewel of romantic camping near Pune. The serene waters reflect the surrounding hills, creating a mirror-like surface that's perfect for romantic boat rides at sunset.</p>
-
-        <div class="callout callout-success">
-          <div class="callout-icon">🌟</div>
-          <div class="callout-content">
-            <strong>Romantic Highlights:</strong>
-            <ul style="margin: 0.5rem 0;">
-              <li>Private lakeside tents with stunning views</li>
-              <li>Candlelit dinners under the stars</li>
-              <li>Couples kayaking experiences</li>
-              <li>Sunrise breakfast on the lake</li>
-              <li>Professional photography sessions</li>
-            </ul>
-          </div>
-        </div>
-
-        <p><strong>What Makes It Special:</strong></p>
-        <ul>
-          <li>360-degree lake views from premium tents</li>
-          <li>Private bonfire setups for intimate evenings</li>
-          <li>Gourmet meal options with local specialties</li>
-          <li>Spa services available at select resorts</li>
-          <li>Complete privacy and seclusion</li>
-        </ul>
-
-        <h3>2. Bhandardara - Mountain Lake Romance</h3>
-        
-        <p><strong>Distance:</strong> 185 km from Pune<br>
-        <strong>Romance Rating:</strong> ⭐⭐⭐⭐⭐<br>
-        <strong>Best For:</strong> Adventure couples, nature lovers</p>
-
-        <p>Nestled in the Sahyadri mountains, Bhandardara offers couples the perfect blend of adventure and romance. Arthur Lake's pristine waters and the surrounding mountains create an unforgettable backdrop.</p>
-
-        <p><strong>Romantic Experiences:</strong></p>
-        <ul>
-          <li>Sunrise views from Kalsubai Peak</li>
-          <li>Romantic walks around Arthur Lake</li>
-          <li>Stargazing sessions (minimal light pollution)</li>
-          <li>Couples trekking adventures</li>
-          <li>Photography at Randha Falls</li>
-        </ul>
-
-        <h3>3. Mulshi Dam - Serene Lakeside Retreat</h3>
-        
-        <p><strong>Distance:</strong> 65 km from Pune<br>
-        <strong>Romance Rating:</strong> ⭐⭐⭐⭐<br>
-        <strong>Best For:</strong> Weekend getaways, photography enthusiasts</p>
-
-        <p>Mulshi Dam creates a vast lake surrounded by rolling hills, offering couples a peaceful retreat close to Pune. The area is perfect for those seeking tranquility and natural beauty.</p>
-
-        <div class="callout callout-info">
-          <div class="callout-icon">📸</div>
-          <div class="callout-content">
-            <strong>Instagram-Perfect Moments:</strong> Mulshi offers some of the most photogenic sunset views in Maharashtra, making it perfect for couples' photography sessions.
-          </div>
-        </div>
-
-        <h2 id="luxury-options">Luxury Camping Experiences for Couples</h2>
-
-        <h3>Premium Tent Features</h3>
-
-        <p><strong>Luxury Tent Amenities:</strong></p>
-        <ul>
-          <li>🛏️ King-size comfortable beds with premium linens</li>
-          <li>🚿 Attached bathrooms with hot water</li>
-          <li>❄️ Air conditioning or climate control</li>
-          <li>🔌 Charging points and WiFi connectivity</li>
-          <li>☕ In-tent refreshment facilities</li>
-          <li>🌅 Private sit-out areas with lake/mountain views</li>
-        </ul>
-
-        <h3>Exclusive Couple Services</h3>
-
-        <div class="callout callout-success">
-          <div class="callout-icon">💝</div>
-          <div class="callout-content">
-            <strong>VIP Romance Package Includes:</strong>
-            <ul style="margin: 0.5rem 0;">
-              <li>Welcome drinks and flower arrangements</li>
-              <li>Private dining setups</li>
-              <li>Couples massage sessions</li>
-              <li>Personalized butler services</li>
-              <li>Special occasion celebrations</li>
-            </ul>
-          </div>
-        </div>
-
-        <h2 id="activities">Romantic Activities for Couples</h2>
-
-        <h3>Water-Based Romance</h3>
-
-        <p><strong>Kayaking Together:</strong> Paddle in tandem across serene lake waters, creating memories while working as a team. Most locations offer couple-friendly kayaks perfect for beginners.</p>
-
-        <p><strong>Sunset Boat Rides:</strong> Private boat rides during golden hour offer magical moments as you watch the sun dip below the horizon, painting the sky in romantic hues.</p>
-
-        <p><strong>Lakeside Picnics:</strong> Many resorts arrange private picnic setups by the water's edge, complete with gourmet baskets and comfortable seating.</p>
-
-        <h3>Adventure for Two</h3>
-
-        <p><strong>Couples Trekking:</strong> Easy to moderate treks around camping locations offer opportunities to explore together while enjoying stunning vistas.</p>
-
-        <p><strong>Star Gazing Sessions:</strong> Away from city lights, these locations offer crystal-clear night skies perfect for romantic stargazing with guided astronomy sessions.</p>
-
-        <div class="callout callout-warning">
-          <div class="callout-icon">🌙</div>
-          <div class="callout-content">
-            <strong>Night Sky Tip:</strong> New moon phases offer the darkest skies for optimal stargazing. Plan your romantic camping trip accordingly for the most spectacular celestial views.
-          </div>
-        </div>
-
-        <h2 id="planning-tips">Planning the Perfect Romantic Camping Trip</h2>
-
-        <h3>Timing Your Getaway</h3>
-
-        <p><strong>Best Seasons for Romance:</strong></p>
-        <ul>
-          <li><strong>October-November:</strong> Post-monsoon freshness, pleasant weather</li>
-          <li><strong>December-February:</strong> Cool, comfortable camping weather</li>
-          <li><strong>March-April:</strong> Spring blooms and moderate temperatures</li>
-        </ul>
-
-        <h3>Romantic Packing Essentials</h3>
-
-        <p><strong>Special Additions for Couples:</strong></p>
-        <ul>
-          <li>🕯️ Battery-operated candles for ambiance</li>
-          <li>🎵 Portable bluetooth speaker for music</li>
-          <li>📚 Books or games for quiet moments</li>
-          <li>🍷 Special beverages (where permitted)</li>
-          <li>💐 Fresh flowers for tent decoration</li>
-          <li>📸 Camera for capturing memories</li>
-        </ul>
-
-        <h3>Creating Intimate Moments</h3>
-
-        <div class="callout callout-success">
-          <div class="callout-icon">💑</div>
-          <div class="callout-content">
-            <strong>Romance Tips:</strong>
-            <ul style="margin: 0.5rem 0;">
-              <li>Wake up early to watch sunrise together</li>
-              <li>Pack favorite snacks and beverages</li>
-              <li>Plan surprise elements (flowers, notes)</li>
-              <li>Disconnect from technology during meals</li>
-              <li>Create a camping playlist together</li>
-            </ul>
-          </div>
-        </div>
-
-        <h2 id="special-occasions">Special Occasion Camping</h2>
-
-        <h3>Anniversary Celebrations</h3>
-
-        <p>Many luxury camping operators offer special anniversary packages including:</p>
-        <ul>
-          <li>Customized tent decorations</li>
-          <li>Multi-course candlelit dinners</li>
-          <li>Professional photography sessions</li>
-          <li>Couples spa treatments</li>
-          <li>Memory books and keepsakes</li>
-        </ul>
-
-        <h3>Proposal Planning</h3>
-
-        <p><strong>Perfect Proposal Spots:</strong></p>
-        <ul>
-          <li>Sunrise at Pawana Lake with mountain backdrop</li>
-          <li>Sunset at Mulshi Dam overlooking the water</li>
-          <li>Under the stars at Bhandardara</li>
-          <li>During a private boat ride</li>
-        </ul>
-
-        <div class="callout callout-info">
-          <div class="callout-icon">💍</div>
-          <div class="callout-content">
-            <strong>Proposal Tip:</strong> Contact camping operators in advance to arrange special setups. Many offer proposal packages with decorations, photography, and celebration arrangements.
-          </div>
-        </div>
-
-        <h3>Honeymoon Camping</h3>
-
-        <p>For couples seeking an adventurous honeymoon, romantic camping near Pune offers:</p>
-        <ul>
-          <li>Private luxury accommodations</li>
-          <li>Personalized itineraries</li>
-          <li>Couple-focused activities</li>
-          <li>Gourmet dining experiences</li>
-          <li>Spa and wellness services</li>
-        </ul>
-
-        <p>Romantic camping near Pune offers couples the perfect opportunity to escape routine, reconnect with each other, and create lasting memories in nature's embrace. Whether you're celebrating a special occasion or simply want to spend quality time together, these destinations provide the ideal setting for romance to flourish.</p>
-
-        <div class="callout callout-success">
-          <div class="callout-icon">❤️</div>
-          <div class="callout-content">
-            <strong>Love is in the Air:</strong> Book your romantic camping getaway today and create memories that will last a lifetime in Maharashtra's most beautiful outdoor settings.
-          </div>
+      <div class="callout callout-info">
+        <div class="callout-icon">🌟</div>
+        <div class="callout-content">
+          <strong>Why Panshet?</strong> Proximity to Pune, scenic Panshet Dam, diverse activities, and a range of budget-friendly to luxury resorts.
         </div>
       </div>
-    `
+
+      <h2 id="top-resorts">Top Camping & Glamping Resorts in Panshet</h2>
+
+      <h3>1. Panshet Lakeside Glamping Resort</h3>
+      <p><strong>Perfect For:</strong> Couples, luxury seekers<br>
+      <strong>Features:</strong> Luxury tents, lake views, private BBQ, water sports<br>
+      <strong>Price Range:</strong> ₹4,000-₹8,000 per night<br>
+      <strong>Booking:</strong> Available via major platforms like Booking.com or direct websites</p>
+
+      <h3>2. Adventure Plus Panshet</h3>
+      <p><strong>Perfect For:</strong> Families, adventure groups<br>
+      <strong>Features:</strong> Pre-pitched tents, guided treks, kayaking, bonfire<br>
+      <strong>Price Range:</strong> ₹2,000-₹4,500 per night<br>
+      <strong>Booking:</strong> Check availability on TripAdvisor or resort sites</p>
+
+      <h3>3. Sahyadri Eco Camp</h3>
+      <p><strong>Perfect For:</strong> Nature lovers, eco-conscious travelers<br>
+      <strong>Features:</strong> Eco-friendly tents, hilltop views, sustainable practices<br>
+      <strong>Price Range:</strong> ₹1,500-₹3,500 per night<br>
+      <strong>Booking:</strong> Book early through local operators or online platforms</p>
+
+      <h2 id="activities">Must-Do Activities in Panshet</h2>
+
+      <h3>1. Water Sports at Panshet Dam</h3>
+      <p><strong>Highlights:</strong> Kayaking, jet-skiing, paddle boating<br>
+      <strong>Best For:</strong> Thrill-seekers, groups<br>
+      <strong>Tip:</strong> Book water sports through your resort for discounts.</p>
+
+      <h3>2. Trekking in Sahyadri Hills</h3>
+      <p><strong>Highlights:</strong> Sinhagad Fort trek, scenic trails<br>
+      <strong>Best For:</strong> Fitness enthusiasts, photographers<br>
+      <strong>Tip:</strong> Start early to avoid midday heat.</p>
+
+      <h3>3. Stargazing and Bonfire Nights</h3>
+      <p><strong>Highlights:</strong> Clear night skies, cozy bonfires<br>
+      <strong>Best For:</strong> Couples, friends<br>
+      <strong>Tip:</strong> Bring a star map app for an enhanced experience.</p>
+
+      <h3>4. Village and Nature Walks</h3>
+      <p><strong>Highlights:</strong> Local culture, bird watching, flora exploration<br>
+      <strong>Best For:</strong> Families, solo travelers<br>
+      <strong>Tip:</strong> Hire a local guide for authentic village insights.</p>
+
+      <h2 id="booking-tips">Booking Your Panshet Resort</h2>
+
+      <p><strong>1. Book Early for Peak Seasons</strong></p>
+      <ul>
+        <li>October-March is high season; book 3-4 weeks in advance.</li>
+        <li>Use platforms like MakeMyTrip or Yatra for deals.</li>
+      </ul>
+
+      <p><strong>2. Compare Packages</strong></p>
+      <ul>
+        <li>Check inclusions (meals, activities, parking).</li>
+        <li>Read reviews on Google or TripAdvisor for authenticity.</li>
+      </ul>
+
+      <div class="callout callout-warning">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-content">
+          <strong>Booking Tip:</strong> Verify cancellation policies and ensure water sports or guided treks are included to maximize value.
+        </div>
+      </div>
+
+      <h2 id="packing-guide">Packing for Panshet Camping & Glamping</h2>
+
+      <h3>Essential Gear</h3>
+      <ul>
+        <li>✅ Sleeping bag (for budget camping)</li>
+        <li>✅ Flashlight or headlamp</li>
+        <li>✅ Portable charger (10,000mAh+)</li>
+        <li>✅ Reusable water bottle</li>
+      </ul>
+
+      <h3>Clothing for Panshet</h3>
+      <ul>
+        <li>✅ Quick-dry outfits for water sports</li>
+        <li>✅ Warm layers for night (10-15°C in winters)</li>
+        <li>✅ Raincoat for monsoon season</li>
+        <li>✅ Trekking shoes or water-friendly sandals</li>
+      </ul>
+
+      <h3>Glamping Extras</h3>
+      <ul>
+        <li>✅ Camera for scenic shots</li>
+        <li>✅ Binoculars for bird watching</li>
+        <li>✅ Light backpack for day hikes</li>
+      </ul>
+
+      <div class="callout callout-info">
+        <div class="callout-icon">🎒</div>
+        <div class="callout-content">
+          <strong>Packing Tip:</strong> Most glamping resorts provide bedding and toiletries, so pack light but include essentials for outdoor activities.
+        </div>
+      </div>
+
+      <h2 id="budget-planning">Budget and Cost Breakdown</h2>
+
+      <h3>Cost Categories (Per Person)</h3>
+
+      <p><strong>Budget Camping (₹1,200-₹2,500)</strong></p>
+      <ul>
+        <li>Basic tents, shared facilities</li>
+        <li>Self-cooked meals</li>
+        <li>Shared transport (bus or carpool)</li>
+      </ul>
+
+      <p><strong>Mid-Range Camping (₹2,500-₹4,500)</strong></p>
+      <ul>
+        <li>Comfortable tents with amenities</li>
+        <li>Meals and some activities included</li>
+        <li>Private vehicle hire</li>
+      </ul>
+
+      <p><strong>Luxury Glamping (₹4,500-₹8,000)</strong></p>
+      <ul>
+        <li>Premium tents with private bathrooms</li>
+        <li>All meals and water sports</li>
+        <li>Guided tours and transfers</li>
+      </ul>
+
+      <div class="callout callout-info">
+        <div class="callout-icon">💰</div>
+        <div class="callout-content">
+          <strong>Cost-Saving Tips:</strong>
+          <ul style="margin: 0.5rem 0;">
+            <li>Book group packages for discounts</li>
+            <li>Travel mid-week for lower rates</li>
+            <li>Bring snacks to reduce meal costs</li>
+            <li>Share transport with friends</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="safety-tips">Safety Tips for a Worry-Free Trip</h2>
+
+      <h3>Before You Go</h3>
+      <ul>
+        <li>🔍 Check weather updates for Panshet</li>
+        <li>📱 Share itinerary with family</li>
+        <li>🏥 Locate nearest clinic (e.g., Mulshi)</li>
+        <li>📋 Verify resort safety protocols</li>
+      </ul>
+
+      <h3>During Your Stay</h3>
+      <ul>
+        <li>🚰 Use purified or bottled water</li>
+        <li>🔥 Follow bonfire safety rules</li>
+        <li>🌿 Respect local wildlife and flora</li>
+        <li>📞 Keep emergency numbers handy</li>
+      </ul>
+
+      <h3>Emergency Preparedness</h3>
+      <ul>
+        <li>First aid kit (bandages, antiseptics, painkillers)</li>
+        <li>Local emergency contacts</li>
+        <li>Backup charger or radio</li>
+      </ul>
+
+      <div class="callout callout-success">
+        <div class="callout-icon">🏕️</div>
+        <div class="callout-content">
+          <strong>Ready to Book?</strong> Plan your Panshet camping or glamping adventure today and enjoy the perfect blend of nature and luxury near Pune!
+        </div>
+      </div>
+
+      <p>Panshet’s camping and glamping resorts offer an unparalleled escape into nature with modern comforts. Use this guide to plan your trip, book the best resorts, and create lasting memories by the Panshet Dam.</p>
+    </div>
+  `,
   },
   {
     id: "5",
     title: "Adventure Activities to Try While Camping Near Pune",
     slug: "adventure-activities-camping-near-pune",
-    summary: "Discover thrilling adventure activities available at camping destinations near Pune, from water sports and trekking to unique experiences that will get your adrenaline pumping.",
-    featuredImage: "https://images.unsplash.com/photo-1596821873485-312eff3fa042?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    summary:
+      "Discover thrilling adventure activities available at camping destinations near Pune, from water sports and trekking to unique experiences that will get your adrenaline pumping.",
+    featuredImage:
+      "https://images.unsplash.com/photo-1596821873485-312eff3fa042?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Adventure",
-    tags: ["adventure camping", "outdoor activities", "pune adventure", "camping activities", "adventure sports"],
+    tags: [
+      "adventure camping",
+      "outdoor activities",
+      "pune adventure",
+      "camping activities",
+      "adventure sports",
+    ],
     publishDate: "2024-02-10",
     readTime: "11 min read",
     author: defaultAuthor,
     tableOfContents: [
-      { id: "water-adventures", title: "Water-Based Adventure Activities", level: 2 },
+      {
+        id: "water-adventures",
+        title: "Water-Based Adventure Activities",
+        level: 2,
+      },
       { id: "land-adventures", title: "Land-Based Adventures", level: 2 },
-      { id: "aerial-activities", title: "Aerial and High-Altitude Adventures", level: 2 },
-      { id: "night-adventures", title: "Night-Time Adventure Activities", level: 2 },
-      { id: "seasonal-activities", title: "Seasonal Adventure Options", level: 2 },
-      { id: "safety-tips", title: "Adventure Safety Guidelines", level: 2 }
+      {
+        id: "aerial-activities",
+        title: "Aerial and High-Altitude Adventures",
+        level: 2,
+      },
+      {
+        id: "night-adventures",
+        title: "Night-Time Adventure Activities",
+        level: 2,
+      },
+      {
+        id: "seasonal-activities",
+        title: "Seasonal Adventure Options",
+        level: 2,
+      },
+      { id: "safety-tips", title: "Adventure Safety Guidelines", level: 2 },
     ],
     seo: {
       metaTitle: "Adventure Camping Near Pune | Top Activities & Sports 2024",
-      metaDescription: "Discover exciting adventure activities while camping near Pune. From water sports to trekking, explore thrilling outdoor experiences in Maharashtra's best locations.",
+      metaDescription:
+        "Discover exciting adventure activities while camping near Pune. From water sports to trekking, explore thrilling outdoor experiences in Maharashtra's best locations.",
       focusKeyword: "adventure camping near pune",
-      keywords: ["adventure camping near pune", "outdoor activities pune", "camping adventure sports", "pune adventure activities", "maharashtra adventure camping", "adventure sports near pune"]
+      keywords: [
+        "adventure camping near pune",
+        "outdoor activities pune",
+        "camping adventure sports",
+        "pune adventure activities",
+        "maharashtra adventure camping",
+        "adventure sports near pune",
+      ],
     },
     content: `
       <div class="blog-content">
@@ -1196,12 +1246,10 @@ export const blogPosts: BlogPost[] = [
           </div>
         </div>
       </div>
-    `
-  }
+    `,
+  },
 ];
 
 export const getRelatedPosts = (currentSlug: string): BlogPost[] => {
-  return blogPosts
-    .filter(post => post.slug !== currentSlug)
-    .slice(0, 3);
+  return blogPosts.filter((post) => post.slug !== currentSlug).slice(0, 3);
 };
