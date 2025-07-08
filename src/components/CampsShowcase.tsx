@@ -21,7 +21,7 @@ const CampsShowcase = () => {
       id: 1,
       name: "Luxury Geodesic Dome",
       type: "Premium Glamping",
-      price: 399,
+      price: 3999,
       rating: 4.9,
       capacity: "2-4 guests",
       images: [
@@ -47,7 +47,7 @@ const CampsShowcase = () => {
       id: 2,
       name: "Forest Sanctuary Suite",
       type: "Luxury Cottage",
-      price: 299,
+      price: 2999,
       rating: 4.8,
       capacity: "2-6 guests",
       images: [
@@ -73,7 +73,7 @@ const CampsShowcase = () => {
       id: 3,
       name: "Riverside Glamping Tent",
       type: "Safari Style",
-      price: 199,
+      price: 1999,
       rating: 4.7,
       capacity: "2-3 guests",
       images: [
@@ -170,7 +170,7 @@ const CampsShowcase = () => {
                 {/* Price Badge */}
                 <div className="absolute top-4 right-4">
                   <Badge className="bg-white/90 text-gray-800 hover:bg-white px-3 py-1 rounded-full font-medium">
-                    ${camp.price}/night
+                    ₹{camp.price}/night
                   </Badge>
                 </div>
 
