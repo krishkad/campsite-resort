@@ -53,7 +53,7 @@ const CampsShowcase = () => {
       images: [
         "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=600&h=400&fit=crop",
         "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1520637836862-4d197d17c0a4?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1690486551254-b5d4420ca56d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
       ],
       amenities: [

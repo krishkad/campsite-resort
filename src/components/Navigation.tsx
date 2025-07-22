@@ -68,11 +68,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
-              className={`${
-                isScrolled || isMobileMenuOpen
-                  ? "bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white"
-                  : "bg-white/20 hover:bg-white/30 text-white border border-white/30"
-              } transition-all duration-300 rounded-full px-8 py-2 font-medium backdrop-blur-sm`}
+              className={`${"bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white"} transition-all duration-300 rounded-full px-8 py-2 font-medium backdrop-blur-sm`}
             >
               Book Now
             </Button>
